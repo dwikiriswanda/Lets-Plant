@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@515&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+.banner {
+    height: 1080px;
+    font-size: 32px;
+    padding: 60px;
+    background-color: #66BB6A;
+    background: url(../images/banner.jpg) no-repeat 50% 50%;
+    text-align: center;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #66BB6A;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 0px;
+    margin-right: 100px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+#content p {
+    text-indent: 50px;
+    color: #263238;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #455A64;
+}
+
+.banner p {
+    color: #78909C;
+}
+
+#content h2 {
+    color: #43A047;
+    margin-left: 32px;
+}
+
+aside h2 {
+    color: #43A047;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.contact img {
+    width: 32px;
+    height: 32px;
+}
+
+.contact li {
+    display: inline;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #66BB6A;
+    text-align: center;
+    font-weight: bold;
+}
+
+figcaption {
+    color: #263238;
+}
+
+/*back to top CSS*/
+
+#backtotop {
+    color: #43A047;
+    z-index: 999;
+    display: inline-block;
+    position: fixed;
+    visibility: hidden;
+    bottom: 40px;
+    right: 40px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 48px;
+    text-align: center;
+    opacity: .2;
+}
+
+#backtotop i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: inherit;
+}
+
+#backtotop.visible {
+    visibility: visible;
+    opacity: .5;
+}
+
+#backtotop:hover {
+    opacity: 1;
+}
+
+/*responsive on mobile*/
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        list-style-type: none;
+        margin-left: 0;
+        margin-right: 32px;
+    }
+
+    .contact img {
+        width: 32px;
+        height: 32px;
+        margin-left: 5px;
+    }
+}
