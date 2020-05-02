@@ -75,11 +75,22 @@ main {
 }
 
 #content p {
-    text-indent: 50px;
     color: #263238;
+}
+
+.indent{
+    text-indent: 16px;
     margin-left: 24px;
     margin-right: 24px;
     margin-bottom: 24px;
+}
+
+.description::first-letter {
+    display: block;
+    float: left;
+    color: #43A047;
+    font-size: 40px;
+    margin-top: -8px;
 }
 
 aside {
